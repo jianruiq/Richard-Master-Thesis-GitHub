@@ -125,10 +125,4 @@ def read_npy_from_directory_and_add_noise_and_save(path,input_areas,training_or_
             label_set_training=1
     return feature_set_training,label_set_training
 
-folder_testing  ='/home/ga48woj/Work/Work/datasets/ModelNet40/dima_sampled_test/pcd_files_test/npy_proposed_feature/'
-folder_training = '/home/ga48woj/Work/Work/datasets/ModelNet40/dima_sampled_train/pcd_files_train/npy_proposed_feature/'
 
-#####debug
-###########
-feature_set_testing,label_set_testing=read_npy_from_directory_and_add_noise_and_save(folder_testing,['descriptors'],'testing')
-feature_set_training,label_set_training=read_npy_from_directory_and_add_noise_and_save(folder_training,['descriptors'],'training')
